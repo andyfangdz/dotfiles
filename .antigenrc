@@ -1,0 +1,23 @@
+antigen use oh-my-zsh
+
+antigen bundle <<EOBUNDLES
+    git
+    zsh-users/zsh-syntax-highlighting
+    zsh-users/zsh-autosuggestions
+    zsh-users/zsh-completions
+    command-not-found
+EOBUNDLES
+
+antigen bundle web-search
+antigen bundle git-flow
+antigen bundle git-extras
+antigen bundle lukechilds/zsh-better-npm-completion
+antigen bundle battery
+antigen bundle osx
+antigen bundle node
+
+antigen bundle web-search
+
+antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
+
+antigen apply
