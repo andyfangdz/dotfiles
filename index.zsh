@@ -10,3 +10,9 @@ antigen init ${script_dir}/.antigenrc
 source ${script_dir}/aliases.zsh
 source ${script_dir}/python.zsh
 source ${script_dir}/gpu.zsh
+
+export PROMPT_COMMAND="${PROMPT_COMMAND} ${PROMPT_TITLE}; "
+source ${script_dir}/vendor/fzf.zsh
+
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
