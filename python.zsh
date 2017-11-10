@@ -1,4 +1,3 @@
-export PATH="/home/andy/anaconda3/bin:$PATH"
-
-
-
+export PATH="/home/andy/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
