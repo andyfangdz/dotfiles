@@ -8,6 +8,7 @@ export SPACESHIP_PROMPT_ADD_NEWLINE=false
 antigen init ${script_dir}/.antigenrc
 
 source ${script_dir}/aliases.zsh
+source ${script_dir}/nodenv.zsh
 source ${script_dir}/python.zsh
 source ${script_dir}/gpu.zsh
 export PROMPT_COMMAND="${PROMPT_COMMAND} ${PROMPT_TITLE}; "
