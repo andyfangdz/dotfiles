@@ -1,5 +1,4 @@
 script_dir=$(dirname $0)
-# source ${script_dir}/nix.zsh
 
 export PATH=~/.local/bin:${script_dir}/bin/:$PATH
 export PATH="$HOME/.cargo/bin:$PATH"
