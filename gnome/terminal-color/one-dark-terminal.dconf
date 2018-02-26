@@ -1,0 +1,17 @@
+[/]
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '24407484-0eb9-4550-8ecc-9a0ce54a6c08']
+default='24407484-0eb9-4550-8ecc-9a0ce54a6c08'
+
+[:24407484-0eb9-4550-8ecc-9a0ce54a6c08]
+foreground-color='#abb2bf'
+visible-name='One Dark'
+palette=['#000000', '#E06C75', '#98c379', '#d19a66', '#61aeee', '#c678dd', '#56b6c2', '#abb2bf', '#5c6370', '#e06c75', '#98c379', '#d19a66', '#62afee', '#c678dd', '#56b6c2', '#ffffff']
+cursor-shape='ibeam'
+cursor-colors-set=false
+use-theme-colors=false
+use-transparent-background=true
+use-theme-background=false
+bold-color-same-as-fg=true
+bold-color='#ABB2BF'
+background-color='#282c34'
+background-transparency-percent=10
