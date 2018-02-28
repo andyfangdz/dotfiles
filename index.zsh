@@ -10,7 +10,8 @@ function() {
   source ${script_dir}/00-header.zsh
   source ${script_dir}/01-utils.zsh
   source ${script_dir}/10-tools.zsh
-
+  
+  source ${script_dir}/common/index.zsh
   source ${script_dir}/langs/index.zsh
 
   source ${script_dir}/80-platforms.zsh
