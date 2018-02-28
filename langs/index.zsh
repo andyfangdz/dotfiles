@@ -16,4 +16,8 @@ function () {
     if [ "$DISABLE_PYTHON" != true ] ; then
         source ${script_dir}/python.zsh
     fi
+
+    if [ "$DISABLE_RUST" != true ] ; then
+        source ${script_dir}/rust.zsh
+    fi
 }
