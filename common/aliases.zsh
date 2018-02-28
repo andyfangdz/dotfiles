@@ -3,13 +3,13 @@ tssh_function() {
     ssh $1 -t "tmux -CC attach || tmux -CC"
 }
 alias tssh=tssh_function
-if _has nvim then
+if _has nvim; then
   alias vim='nvim'
 fi
-if _has hub then
+if _has hub; then
   alias git='hub'
 fi
-if _has otool then
+if _has otool; then
   alias ldd='otool -L'
 fi
 
