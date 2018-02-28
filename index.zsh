@@ -1,19 +1,19 @@
-script_dir=$(dirname $0)
+function() {
+  local script_dir=$(dirname ${(%):-%x})
 
-export PATH=~/.local/bin:${script_dir}/bin/:$PATH
-export PATH="$HOME/.cargo/bin:$PATH"
-source ${script_dir}/vendor/antigen.1.4.1.zsh
+  export ROOT_DIR="$script_dir"
 
-export SPACESHIP_PROMPT_ADD_NEWLINE=false
-antigen init ${script_dir}/.antigenrc
+  if [ -e ${script_dir}/local.config.zsh ]; then
+    source ${script_dir}/local.config.zsh
+  fi
 
-source ${script_dir}/aliases.zsh
-source ${script_dir}/nodenv.zsh
-source ${script_dir}/python.zsh
-source ${script_dir}/gpu.zsh
-export PROMPT_COMMAND="${PROMPT_COMMAND} ${PROMPT_TITLE}; "
-source ${script_dir}/vendor/fzf.zsh
-export PATH="$PATH:`yarn global bin`"
+  source ${script_dir}/00-header.zsh
+  source ${script_dir}/01-utils.zsh
+  source ${script_dir}/10-tools.zsh
 
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-syntax-highlighting
+  source ${script_dir}/langs/index.zsh
+
+  source ${script_dir}/80-platforms.zsh
+  source ${script_dir}/90-misc.zsh
+  source ${script_dir}/99-footer.zsh
+}

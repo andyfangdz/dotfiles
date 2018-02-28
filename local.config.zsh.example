@@ -1,0 +1,6 @@
+# export DISABLE_GOLANG=true
+# export DISABLE_NODEJS=true
+# export DISABLE_PYTHON=true
+# export DISABLE_SDKMAN=true
+# export DISABLE_ANTIGEN=true
+# export DISABLE_ITERM=true
