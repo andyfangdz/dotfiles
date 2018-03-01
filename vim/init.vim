@@ -40,6 +40,11 @@ if dein#load_state($HOME.'/.cache/dein')
 
   call dein#add('sheerun/vim-polyglot')
 
+
+  call dein#add('Rip-Rip/clang_complete')
+  call dein#add('sebastianmarkow/deoplete-rust')
+  call dein#add('zchee/deoplete-jedi')
+
   " Required:
   call dein#end()
   call dein#save_state()
