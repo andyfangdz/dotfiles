@@ -31,6 +31,7 @@ if dein#load_state($HOME.'/.cache/dein')
   " Required:
   call dein#add($HOME.'/.cache/dein/repos/github.com/Shougo/dein.vim')
 
+  call dein#add('Shougo/denite.nvim')
   " Add or remove your plugins here:
   call dein#add('Shougo/neosnippet.vim')
   call dein#add('Shougo/neosnippet-snippets')
@@ -38,9 +39,17 @@ if dein#load_state($HOME.'/.cache/dein')
   " Colortheme and One Dark
   call dein#add('joshdick/onedark.vim')
 
+  " airline
+  call dein#add('vim-airline/vim-airline')
+  call dein#add('vim-airline/vim-airline-themes')
+
+  " fzf
+  call dein#add('~/.fzf')
+  call dein#add('junegunn/fzf.vim')
+
   call dein#add('sheerun/vim-polyglot')
 
-
+  call dein#add('Shougo/deoplete.nvim')
   call dein#add('Rip-Rip/clang_complete')
   call dein#add('sebastianmarkow/deoplete-rust')
   call dein#add('zchee/deoplete-jedi')
@@ -60,5 +69,8 @@ if dein#check_install()
 endif
 
 "End dein Scripts-------------------------
+
+let g:airline#extensions#tabline#enabled = 1
+
 
 :au VimLeave * set guicursor=a:ver10-blinkon1
