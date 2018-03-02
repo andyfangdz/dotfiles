@@ -17,6 +17,9 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
+let g:python_host_prog = $HOME.'/.pyenv/versions/neovim2/bin/python'
+let g:python3_host_prog = $HOME.'/.pyenv/versions/neovim3/bin/python'
+
 " Required:
 set runtimepath+=$HOME/.cache/dein/repos/github.com/Shougo/dein.vim
 
@@ -28,9 +31,28 @@ if dein#load_state($HOME.'/.cache/dein')
   " Required:
   call dein#add($HOME.'/.cache/dein/repos/github.com/Shougo/dein.vim')
 
+  call dein#add('Shougo/denite.nvim')
   " Add or remove your plugins here:
   call dein#add('Shougo/neosnippet.vim')
   call dein#add('Shougo/neosnippet-snippets')
+
+  " Colortheme and One Dark
+  call dein#add('joshdick/onedark.vim')
+
+  " airline
+  call dein#add('vim-airline/vim-airline')
+  call dein#add('vim-airline/vim-airline-themes')
+
+  " fzf
+  call dein#add('~/.fzf')
+  call dein#add('junegunn/fzf.vim')
+
+  call dein#add('sheerun/vim-polyglot')
+
+  call dein#add('Shougo/deoplete.nvim')
+  call dein#add('Rip-Rip/clang_complete')
+  call dein#add('sebastianmarkow/deoplete-rust')
+  call dein#add('zchee/deoplete-jedi')
 
   " Required:
   call dein#end()
@@ -40,12 +62,15 @@ endif
 " Required:
 filetype plugin indent on
 syntax enable
-
+silent! colorscheme onedark
 " If you want to install not installed plugins on startup.
-"if dein#check_install()
-"  call dein#install()
-"endif
+if dein#check_install()
+ call dein#install()
+endif
 
 "End dein Scripts-------------------------
+
+let g:airline#extensions#tabline#enabled = 1
+
 
 :au VimLeave * set guicursor=a:ver10-blinkon1
