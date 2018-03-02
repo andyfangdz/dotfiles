@@ -1,5 +1,6 @@
 if [ "$DISABLE_ITERM" != true ] ; then
     export PROMPT_COMMAND="${PROMPT_COMMAND} ${PROMPT_TITLE}; "
+    test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 fi
 
 
@@ -13,3 +14,6 @@ function upload_gem {
     scp $1 ${username}@${host}:~ && \
         ssh ${username}@${host} "add_gem.rb $1; rm $1"
 }
+
+export GPG_TTY=$(tty)
+[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh

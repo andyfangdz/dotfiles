@@ -4,3 +4,9 @@
 # export DISABLE_SDKMAN=true
 # export DISABLE_ANTIGEN=true
 # export DISABLE_ITERM=true
+# export PROFILE_STARTUP=false
+
+export LAZY_PYENV=true
+export LAZY_NODENV=true
+export LAZY_DIRENV=true
+export LAZY_GOENV=true
