@@ -53,6 +53,8 @@ if dein#load_state($HOME.'/.cache/dein')
   call dein#add('Rip-Rip/clang_complete')
   call dein#add('sebastianmarkow/deoplete-rust')
   call dein#add('zchee/deoplete-jedi')
+  call dein#add('vim-scripts/cream-showinvisibles')
+
 
   " Required:
   call dein#end()
@@ -63,6 +65,7 @@ endif
 filetype plugin indent on
 syntax enable
 silent! colorscheme onedark
+let g:airline_theme='onedark'
 " If you want to install not installed plugins on startup.
 if dein#check_install()
  call dein#install()
@@ -72,5 +75,10 @@ endif
 
 let g:airline#extensions#tabline#enabled = 1
 
-
 :au VimLeave * set guicursor=a:ver10-blinkon1
+
+let mapleader = " "
+nnoremap <leader>ev :split $MYVIMRC<CR> 
+nnoremap <leader>sv :source $MYVIMRC<CR>
+nnoremap <leader>ws :call Cream_list_toggle("n")<CR>
+
