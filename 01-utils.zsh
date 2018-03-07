@@ -35,10 +35,10 @@ if _color; then
   elif [ "$TERM_PROGRAM" = "Apple_Terminal" ]; then
       export TERM=xterm-256color
   else
-    export TERM=rxvt
+    export TERM=xterm-256color
   fi
 else
-  export TERM=xterm
+  export TERM=xterm-256color
 fi
 
 # Utility variables.
@@ -173,3 +173,14 @@ path+=/usr/sbin
 
 export INFOPATH=$HOME/dotfiles/info:$INFOPATH
 
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
