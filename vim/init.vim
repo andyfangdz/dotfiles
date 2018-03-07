@@ -55,7 +55,7 @@ if dein#load_state($HOME.'/.cache/dein')
   call dein#add('zchee/deoplete-jedi')
   call dein#add('vim-scripts/cream-showinvisibles')
 
-
+  call dein#add('hecal3/vim-leader-guide')
   " Required:
   call dein#end()
   call dein#save_state()
@@ -78,7 +78,15 @@ let g:airline#extensions#tabline#enabled = 1
 :au VimLeave * set guicursor=a:ver10-blinkon1
 
 let mapleader = " "
+let g:lmap =  {}
+
 nnoremap <leader>ev :split $MYVIMRC<CR> 
 nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>ws :call Cream_list_toggle("n")<CR>
+
+
+
+call leaderGuide#register_prefix_descriptions("<Space>", "g:lmap")
+nnoremap <silent> <leader> :<c-u>LeaderGuide '<Space>'<CR>
+vnoremap <silent> <leader> :<c-u>LeaderGuideVisual '<Space>'<CR>
 
