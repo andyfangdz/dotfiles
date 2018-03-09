@@ -43,6 +43,8 @@ if dein#load_state($HOME.'/.cache/dein')
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
 
+  call dein#add('tpope/vim-sensible')
+  call dein#add('tpope/vim-fugitive')
   " fzf
   call dein#add('~/.fzf')
   call dein#add('junegunn/fzf.vim')
@@ -99,4 +101,12 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 nnoremap <leader>nt :NERDTreeToggle<CR>
+
+"Natual splitting
+set splitbelow
+set splitright
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
