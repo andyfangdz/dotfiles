@@ -43,6 +43,8 @@ if dein#load_state($HOME.'/.cache/dein')
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
 
+  call dein#add('tpope/vim-sensible')
+  call dein#add('tpope/vim-fugitive')
   " fzf
   call dein#add('~/.fzf')
   call dein#add('junegunn/fzf.vim')
@@ -53,6 +55,8 @@ if dein#load_state($HOME.'/.cache/dein')
   call dein#add('Rip-Rip/clang_complete')
   call dein#add('sebastianmarkow/deoplete-rust')
   call dein#add('zchee/deoplete-jedi')
+
+  call dein#add('scrooloose/nerdtree')
   call dein#add('vim-scripts/cream-showinvisibles')
 
   call dein#add('hecal3/vim-leader-guide')
@@ -87,4 +91,20 @@ nnoremap <leader>ws :call Cream_list_toggle("n")<CR>
 call leaderGuide#register_prefix_descriptions("<Space>", "g:lmap")
 nnoremap <silent> <leader> :<c-u>LeaderGuide '<Space>'<CR>
 vnoremap <silent> <leader> :<c-u>LeaderGuideVisual '<Space>'<CR>
+
+
+"Nerdtree stuff
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+nnoremap <leader>nt :NERDTreeToggle<CR>
+
+"Natual splitting
+set splitbelow
+set splitright
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
