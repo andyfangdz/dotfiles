@@ -60,6 +60,11 @@ if dein#load_state($HOME.'/.cache/dein')
   call dein#add('vim-scripts/cream-showinvisibles')
 
   call dein#add('hecal3/vim-leader-guide')
+  let prettier_ft = ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue']
+  call dein#add('prettier/vim-prettier', {
+              \ 'build': 'yarn install',
+              \ 'on_ft': prettier_ft
+              \ })
   " Required:
   call dein#end()
   call dein#save_state()
@@ -76,6 +81,7 @@ if dein#check_install()
 endif
 
 "End dein Scripts-------------------------
+let g:prettier#config#parser = 'babylon'
 
 let g:airline#extensions#tabline#enabled = 1
 
