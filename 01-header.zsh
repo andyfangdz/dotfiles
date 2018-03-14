@@ -17,7 +17,7 @@ export ROOT_DIR="$script_dir"
 fpath+=${script_dir}/completions
 
 if [ "$DISABLE_ZPLUG" != true ] ; then
-    source ${script_dir}/.zplugrc.zsh
+    source ${script_dir}/zplugrc.zsh
 fi
 
 zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"

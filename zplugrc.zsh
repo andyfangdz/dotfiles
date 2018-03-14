@@ -19,12 +19,19 @@ zplug "zsh-users/zsh-autosuggestions"
 zplug "b4b4r07/enhancd", use:init.sh
 
 if zplug check "b4b4r07/enhancd"; then
-    #export ENHANCD_FILTER="fzf --height 50% --reverse --ansi --preview 'ls -l {}' --preview-window down"
-    export ENHANCD_FILTER="fzy:fzf --height 50% --reverse --ansi"
-    export ENHANCD_DOT_SHOW_FULLPATH=1
+    if _is $HOSTTYPE_MAC; then
+        FORCE_COLOR_LS="CLICOLOR_FORCE=1 ls -G -C {}"
+    fi
+    if _is $HOSTTYPE_LINUX; then
+        FORCE_COLOR_LS="ls --color=always -C {}"
+    fi
+    export ENHANCD_FILTER="fzf --height 50% --reverse --ansi --preview '$FORCE_COLOR_LS' --preview-window down"
+    #export ENHANCD_FILTER="fzy:fzf --height 50% --reverse --ansi"
+    export ENHANCD_DISABLE_DOT=1
 fi
 
 zplug "plugins/osx", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
 
 zplug "denysdovhan/spaceship-zsh-theme", as:theme
 
+export SPACESHIP_VI_MODE_SHOW=false
