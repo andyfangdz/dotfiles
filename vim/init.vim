@@ -51,10 +51,13 @@ if dein#load_state($HOME.'/.cache/dein')
 
   call dein#add('sheerun/vim-polyglot')
 
-  call dein#add('Shougo/deoplete.nvim')
-  call dein#add('Rip-Rip/clang_complete')
-  call dein#add('sebastianmarkow/deoplete-rust')
-  call dein#add('zchee/deoplete-jedi')
+  " completions
+  call dein#add('roxma/nvim-completion-manager')
+
+  " rust
+  call dein#add('rust-lang/rust.vim')
+  call dein#add('racer-rust/vim-racer')
+  call dein#add('roxma/nvim-cm-racer')
 
   call dein#add('scrooloose/nerdtree')
   call dein#add('vim-scripts/cream-showinvisibles')
@@ -94,6 +97,7 @@ nnoremap <leader>ev :split $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>ws :call Cream_list_toggle("n")<CR>
 
+
 call leaderGuide#register_prefix_descriptions("<Space>", "g:lmap")
 nnoremap <silent> <leader> :<c-u>LeaderGuide '<Space>'<CR>
 vnoremap <silent> <leader> :<c-u>LeaderGuideVisual '<Space>'<CR>
@@ -106,6 +110,9 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 nnoremap <leader>nt :NERDTreeToggle<CR>
 
+"Language specific formatting
+autocmd FileType javascript nnoremap <buffer> <leader>ff :Prettier<CR>
+autocmd FileType rust       nnoremap <buffer> <leader>ff :RustFmt<CR>
 "Natual splitting
 set splitbelow
 set splitright
@@ -113,4 +120,6 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+let g:rustfmt_autosave = 1
 
