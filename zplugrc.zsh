@@ -22,7 +22,7 @@ zplug "lib/termsupport",   from:oh-my-zsh
 
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-history-substring-search"
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "zdharma/fast-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-autosuggestions"
 
 zplug "b4b4r07/enhancd", use:init.sh
@@ -38,6 +38,9 @@ if zplug check "b4b4r07/enhancd"; then
     #export ENHANCD_FILTER="fzy:fzf --height 50% --reverse --ansi"
     export ENHANCD_DISABLE_DOT=1
 fi
+
+zplug "skx/sysadmin-util"
+
 
 zplug "plugins/osx", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
 
