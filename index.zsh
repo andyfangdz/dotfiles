@@ -9,7 +9,9 @@ fi
 source ${script_dir}/00-utils.zsh
 source ${script_dir}/01-header.zsh
 source ${script_dir}/10-tools.zsh
-  
+
+source ${script_dir}/20-zsh.zsh
+
 source ${script_dir}/common/index.zsh
 source ${script_dir}/langs/index.zsh
 

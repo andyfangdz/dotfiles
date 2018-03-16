@@ -18,3 +18,6 @@ alias myc++="c++ \$(<$HOME/dotfiles/flags/common) \$(<$HOME/dotfiles/flags/cxxfl
 
 alias emc='emacsclient -a "" -c'
 alias em='emacsclient -a "" -t'
+
+alias aria2server='aria2c --enable-rpc --rpc-listen-all'
+
