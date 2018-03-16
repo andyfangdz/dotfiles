@@ -1,0 +1,14 @@
+localhost:8080 {
+    gzip
+    root {$HOME}/Sites/webroot
+    browse
+    log stdout
+    filemanager /_/filesmanager {
+        no_auth
+        allow_commands true
+        allow_edit true
+        allow_new true
+        allow_publish true
+        commands git
+    }
+}
