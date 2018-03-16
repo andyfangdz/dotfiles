@@ -83,6 +83,11 @@ if dein#check_install()
  call dein#install()
 endif
 
+scriptencoding utf-8
+set encoding=utf-8
+
+let g:NERDTreeDirArrowExpandable = '>'
+let g:NERDTreeDirArrowCollapsible = "▼"
 "End dein Scripts-------------------------
 let g:prettier#config#parser = 'babylon'
 
