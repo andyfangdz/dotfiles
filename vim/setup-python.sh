@@ -1,3 +1,7 @@
+export PATH="~/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 pyenv install 2.7.11
 pyenv install 3.6.4
 
