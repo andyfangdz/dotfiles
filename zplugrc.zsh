@@ -11,6 +11,15 @@ zplug "plugins/colorize", from:oh-my-zsh
 zplug "plugins/node", from:oh-my-zsh
 zplug "plugins/command-not-found", from:oh-my-zsh
 
+zplug "lib/clipboard",   from:oh-my-zsh
+zplug "lib/compfix",   from:oh-my-zsh
+zplug "lib/correction",   from:oh-my-zsh
+zplug "lib/directories",   from:oh-my-zsh
+zplug "lib/grep",   from:oh-my-zsh
+zplug "lib/history",   from:oh-my-zsh
+zplug "lib/spectrum",   from:oh-my-zsh
+zplug "lib/termsupport",   from:oh-my-zsh
+
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
