@@ -3,7 +3,6 @@ if [ "$DISABLE_ITERM" != true ] ; then
     test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 fi
 
-
 function upload_gem {
     username=`whoami`
     # resolve the DNS entry only once,
