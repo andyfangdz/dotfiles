@@ -94,7 +94,7 @@ let g:prettier#config#parser = 'babylon'
 let g:airline#extensions#tabline#enabled = 1
 
 :au VimLeave * set guicursor=a:ver10-blinkon1
-
+ca w!! w !sudo tee "%"
 let mapleader = " "
 let g:lmap =  {}
 
