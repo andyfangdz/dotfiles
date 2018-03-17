@@ -12,8 +12,9 @@ multi_colorize='
 
 my_fzf_preview="file {} && echo && $multi_colorize"
 
-export FZF_DEFAULT_COMMAND='fd --type f'
-
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules}/*" 2> /dev/null'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+bindkey -s '^p' 'vim $(fzf)^M'
 export FZF_DEFAULT_OPTS="--height 60% --reverse --border"
 
 alias fzp="fzf --preview '$my_fzf_preview' --preview-window down"

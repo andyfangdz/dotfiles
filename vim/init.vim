@@ -127,4 +127,10 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 let g:rustfmt_autosave = 1
+let g:rg_command = '
+  \ rg --column --line-number --no-heading --fixed-strings --ignore-case --follow --color "always"
+  \ -g "*.{zsh,sh,jsx,js,css,json,md,html,config,py,cpp,c,go,rb,conf,ts,tsx,java,kt}"
+  \ -g "!{.git,node_modules,vendor}/*" '
+
+command! -bang -nargs=* F call fzf#vim#grep(g:rg_command .shellescape(<q-args>), 1, <bang>0)
 
