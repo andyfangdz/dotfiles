@@ -14,4 +14,6 @@ my_fzf_preview="file {} && echo && $multi_colorize"
 
 export FZF_DEFAULT_COMMAND='fd --type f'
 
-export FZF_DEFAULT_OPTS="--height 60% --reverse --border --inline-info --preview '$my_fzf_preview' --preview-window down"
+export FZF_DEFAULT_OPTS="--height 60% --reverse --border"
+
+alias fzp="fzf --preview '$my_fzf_preview' --preview-window down"
