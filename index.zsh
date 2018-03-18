@@ -19,5 +19,3 @@ source ${local_zsh_dir}/99-footer.zsh
 
 source ${local_zsh_dir}/common/index.zsh
 source ${local_zsh_dir}/langs/index.zsh
-
-
