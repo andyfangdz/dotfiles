@@ -11,6 +11,7 @@ source ${local_zsh_dir}/00-utils.zsh
 source ${local_zsh_dir}/01-header.zsh
 source ${local_zsh_dir}/10-tools.zsh
 source ${local_zsh_dir}/20-zsh.zsh
+source ${local_zsh_dir}/30-keys.zsh
 
 source ${local_zsh_dir}/common/index.zsh
 source ${local_zsh_dir}/langs/index.zsh

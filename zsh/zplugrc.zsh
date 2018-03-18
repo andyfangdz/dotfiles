@@ -45,5 +45,5 @@ zplug "skx/sysadmin-util"
 zplug "plugins/osx", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
 
 zplug "denysdovhan/spaceship-zsh-theme", as:theme
-
 export SPACESHIP_VI_MODE_SHOW=false
+
