@@ -25,3 +25,4 @@ alias em='emacsclient -a "" -t'
 
 alias aria2server='aria2c --enable-rpc --rpc-listen-all'
 
+alias compfix='compaudit | xargs chmod -R 0755'
