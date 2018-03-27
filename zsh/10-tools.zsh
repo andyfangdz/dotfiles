@@ -1,5 +1,3 @@
-source ${script_dir}/vendor/fzf.zsh
-
 multi_colorize='
     [[ $(file --mime {}) =~ binary ]] &&
         echo {} is a binary file ||
