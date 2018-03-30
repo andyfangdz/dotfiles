@@ -26,7 +26,9 @@ goenv
 google-benchmark
 gpg-agent
 graphviz
+htop
 hub
+hugo
 ideviceinstaller
 ios-deploy
 ipython
@@ -43,6 +45,7 @@ nodenv
 ocaml
 openssl@1.1
 pinentry-mac
+portaudio
 qemu
 andyfangdz/mac/ripgrep-avx
 ruby

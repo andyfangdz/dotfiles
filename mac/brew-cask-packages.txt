@@ -24,6 +24,7 @@ kite
 kitematic
 mactex
 moom
+muzzle
 nvidia-geforce-now
 osxfuse
 rescuetime
