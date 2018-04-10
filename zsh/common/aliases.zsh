@@ -6,6 +6,7 @@ alias tssh=tssh_function
 alias sv='source ~/.zshrc'
 if _has nvim; then
   alias vim='nvim'
+  alias vi='nvim'
 fi
 if _has exa; then
   alias ls='exa'
