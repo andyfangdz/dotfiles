@@ -1,5 +1,6 @@
 local script_dir=$(dirname ${(%):-%x})
 
+local script_dir_end=$script_dir
 export ROOT_DIR="$script_dir/zsh"
 export local_zsh_dir="$ROOT_DIR"
 
@@ -19,3 +20,9 @@ source ${local_zsh_dir}/99-footer.zsh
 
 source ${local_zsh_dir}/common/index.zsh
 source ${local_zsh_dir}/langs/index.zsh
+
+if [ -e ${script_dir_end}/local-end.config.zsh ]; then
+  source ${script_dir_end}/local-end.config.zsh
+fi
+
+
