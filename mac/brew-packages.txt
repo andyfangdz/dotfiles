@@ -46,7 +46,9 @@ ocaml
 openssl@1.1
 pinentry-mac
 portaudio
+pv
 qemu
+redis
 andyfangdz/mac/ripgrep-avx
 ruby
 sha2
