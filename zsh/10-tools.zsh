@@ -1,18 +1,8 @@
-multi_colorize='
-    [[ $(file --mime {}) =~ binary ]] &&
-        echo {} is a binary file ||
-        (highlight -O ansi -l {} ||
-        coderay {} ||
-        rougify {} ||
-        pygmentize -f terminal256 -O style=monokai -g {} ||
-        cat {}) 2> /dev/null | head -500
-'
-
-my_fzf_preview="file {} && echo && $multi_colorize"
-
 export FZF_DEFAULT_COMMAND='rg --files --follow -g "!{.git,node_modules}/*" 2> /dev/null'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 bindkey -s '^p' 'vim $(fzf)^M'
 export FZF_DEFAULT_OPTS="--reverse --border"
 
-alias fzp="fzf --preview '$my_fzf_preview' --preview-window down"
+if _has npx; then
+    source <(npx --shell-auto-fallback zsh)
+fi
