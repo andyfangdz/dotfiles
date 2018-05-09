@@ -24,3 +24,4 @@ setopt COMPLETE_ALIASES
 
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu select
+

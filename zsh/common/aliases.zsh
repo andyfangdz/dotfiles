@@ -2,6 +2,7 @@ alias dockviz="docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock 
 tssh_function() {
     ssh $1 -t "tmux -CC attach || tmux -CC"
 }
+alias tmpdir='cd $(mktemp -d)'
 alias tssh=tssh_function
 alias sv='source ~/.zshrc'
 if _has nvim; then
