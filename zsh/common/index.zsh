@@ -5,4 +5,5 @@ function () {
     source ${script_dir}/aliases.zsh
     source ${script_dir}/direnv.zsh
     source ${script_dir}/paths.zsh
+    source ${script_dir}/editors.zsh
 }
