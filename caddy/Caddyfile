@@ -1,14 +1,37 @@
-localhost:8080 {
+montrose431.ddns.net, 
+mini.i.andyfang.biz:80,
+mini.d.andyfang.biz:80,
+localhost, 
+andys-mac-mini.local:80 {
     gzip
     root {$HOME}/Sites/webroot
     browse
     log stdout
-    filemanager /_/filesmanager {
+
+    tls {
+        alpn http/1.1
+    }
+
+    jwt {
+        path /
+	redirect /login
+    }
+
+    login {
+        htpasswd file=htpasswd
+    }
+
+    filemanager /_/filemanager {
         no_auth
         allow_commands true
         allow_edit true
         allow_new true
         allow_publish true
         commands git
+    }
+
+    proxy /_/aria2 localhost:6800 {
+        without /_/aria2
+	websocket
     }
 }

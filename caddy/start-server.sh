@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-launchctl load ~/Library/LaunchAgents/com.caddyserver.web.plist
+launchctl load /Library/LaunchAgents/com.caddyserver.web.plist

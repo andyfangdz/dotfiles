@@ -2,5 +2,5 @@
 
 mkdir -p $HOME/Sites/webroot
 
-ln -sf Caddyfile $HOME/Sites/Caddyfile
-ln -sf com.caddyserver.web.plist $HOME/Library/LaunchAgents/com.caddyserver.web.plist
+ln -sf $PWD/Caddyfile $HOME/Sites/Caddyfile
+sudo ln -sf $PWD/com.caddyserver.web.plist /Library/LaunchAgents/com.caddyserver.web.plist

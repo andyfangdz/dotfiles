@@ -13,10 +13,10 @@
 <array>
 <string>sh</string>
 <string>-c</string>
-<string>ulimit -n 8192; cd $HOME/Sites; ./caddy/caddy -agree -email andyfang.dz@gmail.com -conf=$HOME/Sites/Caddyfile</string>
+<string>ulimit -n 8192; cd $HOME/Sites; /usr/local/bin/caddy -agree -email andyfang.dz@gmail.com -conf=$HOME/Sites/Caddyfile</string>
 </array>
 <key>UserName</key>
-<string>andy</string>
+<string>root</string>
 <key>RunAtLoad</key>
 <true/>
 <key>KeepAlive</key>
