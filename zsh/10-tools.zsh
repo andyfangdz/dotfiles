@@ -59,7 +59,7 @@ bcp() {
 
 bcip() {
     local token
-    token=$(brew cask search | fzf-tmux --query="$1" +m --preview 'brew cask info {}')
+    token=$(brew cask search 2>/dev/null | fzf-tmux --query="$1" +m --preview 'brew cask info {}')
 
     if [ "x$token" != "x" ]
     then
@@ -79,7 +79,7 @@ bcip() {
 # and display a info quickview window for the currently marked application
 bcup() {
     local token
-    token=$(brew cask list | fzf-tmux --query="$1" +m --preview 'brew cask info {}')
+    token=$(brew cask list 2>/dev/null | fzf-tmux --query="$1" +m --preview 'brew cask info {}')
 
     if [ "x$token" != "x" ]
     then
