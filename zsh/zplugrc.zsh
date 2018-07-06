@@ -9,7 +9,6 @@ zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/git-extras", from:oh-my-zsh
 zplug "plugins/colorize", from:oh-my-zsh
 zplug "plugins/node", from:oh-my-zsh
-zplug "plugins/command-not-found", from:oh-my-zsh
 zplug "liangguohuan/fzf-marker"
 
 zplug "lib/clipboard",   from:oh-my-zsh
