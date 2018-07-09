@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+LOG="$HOME/.enhancd/enhancd.log"
+
+cp "$LOG" "$LOG.bkp"
+
+awk '!a[$0]++' "$LOG" | sponge "$LOG"
+
+while IFS= read -r f; do
+    if [[ -d "$f" ]]; then
+        echo "$f"
+    fi
+done < "$LOG" | sponge "$LOG"
