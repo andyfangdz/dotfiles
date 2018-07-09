@@ -5,6 +5,7 @@ cheatsheet
 dash
 dayone-cli
 gfxcardstatus
+github
 keybase
 kitty
 moom
@@ -12,6 +13,7 @@ muzzle
 noun-project
 oni
 paintbrush
+platypus
 quip
 rescuetime
 setapp

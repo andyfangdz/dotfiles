@@ -21,6 +21,7 @@ fish
 fzf
 fzy
 gcc
+ghq
 git
 git-lfs
 glide
