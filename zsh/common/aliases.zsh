@@ -19,3 +19,5 @@ alias myc="cc \$(<$HOME/dotfiles/flags/common) \$(<$HOME/dotfiles/flags/cflags)"
 alias myc++="c++ \$(<$HOME/dotfiles/flags/common) \$(<$HOME/dotfiles/flags/cxxflags)"
 alias aria2server='aria2c --enable-rpc --rpc-listen-all'
 alias compfix='compaudit | xargs chmod -R 0755'
+
+alias uuid="uuidgen | tr -d - | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpaste && echo"

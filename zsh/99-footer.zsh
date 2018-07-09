@@ -24,3 +24,9 @@ if [ "$(command -v fasd)" -nt "$fasd_cache" -o ! -s "$fasd_cache" ]; then
 fi
 source "$fasd_cache"
 unset fasd_cache
+
+if [[ $1 == eval ]]
+then
+    eval "$@"
+set --
+fi
