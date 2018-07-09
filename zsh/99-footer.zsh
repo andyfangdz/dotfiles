@@ -5,7 +5,7 @@ if [ "$DISABLE_ZPLUG" != true ] ; then
     # Then, source packages and add commands to $PATH
     zplug load
 fi
-# source ${script_dir}/vendor/fzf.zsh
+source ${script_dir}/vendor/fzf.zsh
 _fzf_compgen_path() {
     rg --files --follow -g '!{.git,node_modules}/*' "$1"
 }

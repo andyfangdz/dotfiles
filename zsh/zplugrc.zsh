@@ -32,8 +32,7 @@ zplug "lib/spectrum",   from:oh-my-zsh
 zplug "lib/termsupport",   from:oh-my-zsh
 
 zplug "zsh-users/zsh-completions"
-zplug "zsh-users/zsh-history-substring-search"
-zplug "zdharma/fast-syntax-highlighting", defer:2
+zplug "zdharma/fast-syntax-highlighting", defer:3
 zplug "zsh-users/zsh-autosuggestions"
 
 zplug "b4b4r07/enhancd", use:init.sh
