@@ -20,4 +20,8 @@ function () {
     if [ "$DISABLE_RUST" != true ] ; then
         source ${script_dir}/rust.zsh
     fi
+
+    if [ "$DISABLE_RUBY" != true ] ; then
+        source ${script_dir}/ruby.zsh
+    fi
 }
