@@ -24,5 +24,3 @@ source ${local_zsh_dir}/langs/index.zsh
 if [ -e ${script_dir_end}/local-end.config.zsh ]; then
   source ${script_dir_end}/local-end.config.zsh
 fi
-
-

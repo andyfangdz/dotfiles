@@ -44,7 +44,7 @@ if zplug check "b4b4r07/enhancd"; then
     if _is $HOSTTYPE_LINUX; then
         FORCE_COLOR_LS="ls --color=always -C {}"
     fi
-    export ENHANCD_FILTER="fzf --height 60% --reverse --ansi --preview '$FORCE_COLOR_LS' --preview-window down"
+    export ENHANCD_FILTER="fzf-tmux --height 60% --reverse --ansi --preview '$FORCE_COLOR_LS' --preview-window down"
     #export ENHANCD_FILTER="fzy:fzf --height 50% --reverse --ansi"
     export ENHANCD_DISABLE_DOT=1
 fi
