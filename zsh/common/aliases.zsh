@@ -21,3 +21,5 @@ alias aria2server='aria2c --enable-rpc --rpc-listen-all'
 alias compfix='compaudit | xargs chmod -R 0755'
 
 alias uuid="uuidgen | tr -d - | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpaste && echo"
+alias pick1="gshuf -n 1"
+alias first1="head -n 1"
