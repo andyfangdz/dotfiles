@@ -74,8 +74,8 @@ bcip() {
     fi
 }
 
-# Uninstall or open the webpage for the selected application 
-# using brew list as input source (all brew cask installed applications) 
+# Uninstall or open the webpage for the selected application
+# using brew list as input source (all brew cask installed applications)
 # and display a info quickview window for the currently marked application
 bcup() {
     local token
@@ -294,7 +294,7 @@ fstash() {
   done
 }
 
-# fgst - pick files from `git status -s` 
+# fgst - pick files from `git status -s`
 is_in_git_repo() {
   git rev-parse HEAD > /dev/null 2>&1
 }
