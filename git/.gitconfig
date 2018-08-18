@@ -8,5 +8,7 @@
 	slg = stash list --pretty=reflg
 	blg = branch --format '%(color:red)%(objectname:short)%(color:reset) %(color:green)%(committerdate:iso)%(color:reset) %(subject) %(color:bold blue)-- %(authorname)%(color:reset) %(color:yellow)(%(refname:short))%(color:reset)'
 	up = "!git remote update -p; git merge --ff-only @{u}"
+    ppush = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
+    aliases = "!open https://gist.github.com/robmiller/6018582"
 [pull]
 	ff = only   
