@@ -14,7 +14,9 @@ fi
 if _has otool; then
   alias ldd='otool -L'
 fi
-
+if _has bat; then
+  alias cat=bat
+fi
 alias myc="cc \$(<$HOME/dotfiles/flags/common) \$(<$HOME/dotfiles/flags/cflags)"
 alias myc++="c++ \$(<$HOME/dotfiles/flags/common) \$(<$HOME/dotfiles/flags/cxxflags)"
 alias aria2server='aria2c --enable-rpc --rpc-listen-all'
