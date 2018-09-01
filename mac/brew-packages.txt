@@ -1,7 +1,9 @@
 aria2
 automake
+autossh
 awscli
 bash
+bat
 binutils
 bison
 byobu
@@ -9,6 +11,7 @@ caddy
 clang-format
 cmake
 cocoapods
+colordiff
 dep
 direnv
 railwaycat/emacsmacport/emacs-mac
@@ -21,6 +24,7 @@ fish
 fzf
 fzy
 gcc
+ghostscript
 ghq
 git
 git-lfs
@@ -32,6 +36,7 @@ goenv
 google-benchmark
 gpg-agent
 graphviz
+highlight
 htop
 httpie
 hub
@@ -57,7 +62,7 @@ mysql
 nasm
 neofetch
 neovim
-node
+nmap
 nodenv
 ocaml
 openssh
@@ -70,12 +75,15 @@ pypy3
 qcachegrind
 qemu
 rbenv
+reattach-to-user-namespace
 redis
 andyfangdz/mac/ripgrep-avx
 ruby
 sha2
+shyaml
 socat
 telnet
+terminal-notifier
 terraform
 texinfo
 thrift@0.9
