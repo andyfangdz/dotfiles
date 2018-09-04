@@ -17,6 +17,16 @@ fi
 if _has bat; then
   alias cat=bat
 fi
+if _has diff-so-fancy; then
+  alias diff="diff-so-fancy"
+fi
+if _has prettyping; then
+  alias ping='prettyping --nolegend'
+fi
+if _has ncdu; then
+  alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
+fi
+
 alias myc="cc \$(<$HOME/dotfiles/flags/common) \$(<$HOME/dotfiles/flags/cflags)"
 alias myc++="c++ \$(<$HOME/dotfiles/flags/common) \$(<$HOME/dotfiles/flags/cxxflags)"
 alias aria2server='aria2c --enable-rpc --rpc-listen-all'
