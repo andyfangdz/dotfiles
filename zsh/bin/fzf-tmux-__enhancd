@@ -1,0 +1,2 @@
+#!/usr/bin/env zsh
+fzf-tmux --height 60% --reverse --ansi --preview 'CLICOLOR_FORCE=1 ls -G -C {}' --preview-window down
