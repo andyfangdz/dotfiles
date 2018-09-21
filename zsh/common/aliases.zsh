@@ -15,7 +15,7 @@ if _has otool; then
   alias ldd='otool -L'
 fi
 if _has bat; then
-  alias cat="bat -p"
+  alias cat="bat -p --wrap=never"
 fi
 if _has diff-so-fancy; then
   alias diff="diff-so-fancy"
