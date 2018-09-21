@@ -9,9 +9,8 @@ main() {
     main "$file_to_edit"
   fi
 }
-fzf_preview_cmd='[[ $(file --mime {}) =~ binary ]] &&
-                 echo {} is a binary file ||
-                  bat {} --color always 2> /dev/null | head -500'
+
+fzf_preview_cmd='__fuz::preview {}'
 select_file() {
   given_file="$1"
   fzf --preview="$fzf_preview_cmd" --preview-window=right:70%:wrap --query="$given_file"

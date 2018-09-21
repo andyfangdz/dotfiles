@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+fuz_preview() {
+  if [[ `file --mime $1` =~ binary ]]
+  then
+    echo $1 is a binary file
+  else
+    bat $1 --color always --style=numbers 2> /dev/null | head -500
+  fi
+}
+
+fuz_preview $1
