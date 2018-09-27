@@ -63,14 +63,14 @@ bcip() {
 
     if [ "x$token" != "x" ]
     then
-        echo "(I)nstall or open the (h)omepage of $token"
+        echo "Install or open the (h)omepage of $token"
         read input
-        if [ $input = "i" ] || [ $input = "I" ]; then
-            brew cask install $token
-        fi
         if [ $input = "h" ] || [ $input = "H" ]; then
             brew cask home $token
+        else
+            brew cask install $token
         fi
+
     fi
 }
 
@@ -83,13 +83,12 @@ bcup() {
 
     if [ "x$token" != "x" ]
     then
-        echo "(U)ninstall or open the (h)omepage of $token"
+        echo "Uninstall or open the (h)omepage of $token"
         read input
-        if [ $input = "u" ] || [ $input = "U" ]; then
-            brew cask uninstall $token
-        fi
-        if [ $input = "h" ] || [ $token = "h" ]; then
+        if [ $input = "h" ] || [ $input = "H" ]; then
             brew cask home $token
+        else
+            brew cask uninstall $token
         fi
     fi
 }
