@@ -1,3 +1,4 @@
+1password-cli
 aerial
 alfred
 android-platform-tools
@@ -8,7 +9,6 @@ dayone-cli
 gfxcardstatus
 github
 keybase
-kitty
 moom
 muzzle
 noun-project
