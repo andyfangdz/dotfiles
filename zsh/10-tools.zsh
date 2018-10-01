@@ -59,7 +59,7 @@ bcp() {
 
 bcip() {
     local token
-    token=$(brew cask search 2>/dev/null | fzf-tmux --query="$1" +m --preview 'brew cask info {}')
+    token=$(brew search --casks 2>/dev/null | fzf-tmux --query="$1" +m --preview 'brew cask info {}')
 
     if [ "x$token" != "x" ]
     then
