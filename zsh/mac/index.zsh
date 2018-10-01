@@ -12,7 +12,7 @@ unformat() {
 }
 
 alias ldd='otool -L'
-alias brewski='brew update && brew upgrade && brew cleanup && brew cask upgrade && brew cask cleanup; brew doctor'
+alias brewski='brew update && brew upgrade && brew cleanup && brew cask upgrade; brew doctor'
 alias synctime="docker run -it --rm --privileged --pid=host debian nsenter -t 1 -m -u -n -i date -u $(date -u +%m%d%H%M%Y)"
 
 pman () {
