@@ -8,8 +8,7 @@ fi
 zplug "junegunn/fzf-bin", \
     as:command, \
     from:gh-r, \
-    rename-to:"fzf", \
-    frozen:1
+    rename-to:"fzf"
 
 zplug "b4b4r07/zsh-gomi", \
     as:command, \

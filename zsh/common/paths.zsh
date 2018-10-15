@@ -10,7 +10,7 @@ if _is "$HOSTNAME_MAC"; then
 fi
 
 function() {
-    local bin_dir=`dirname ${(%):-%x}`/../bin
+    local bin_dir=`dirname ${(%):-%x}`/../../bin
     local vendor_bin_dir=`dirname ${(%):-%x}`/../../vendor/bin
     path+=$bin_dir
     path+=$vendor_bin_dir

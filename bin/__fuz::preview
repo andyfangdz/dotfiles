@@ -1,9 +1,18 @@
 #!/usr/bin/env bash
 
+binary_preview() {
+  if [[ $LESS_ADVANCED_PREPROCESSOR = "1" ]]
+  then
+    less $1
+  else
+    echo $1 is a binary file
+  fi
+}
+
 fuz_preview() {
   if [[ `file --mime $1` =~ binary ]]
   then
-    echo $1 is a binary file
+    binary_preview $1
   else
     bat $1 --color=always --style=numbers 2> /dev/null | head -500
   fi

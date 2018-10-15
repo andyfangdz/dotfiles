@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-fuzzpass() {
+fuzpass() {
     local arg=$1
     if [ "$arg" == "" ]; then
         arg="password"
@@ -8,4 +8,4 @@ fuzzpass() {
     [[ ! -z "$item" ]] && 1pass $item $arg
 }
 
-fuzzpass $@
+fuzpass $@
