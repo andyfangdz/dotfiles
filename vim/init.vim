@@ -63,6 +63,8 @@ if dein#load_state($HOME.'/.cache/dein')
   call dein#add('vim-scripts/cream-showinvisibles')
 
   call dein#add('hecal3/vim-leader-guide')
+
+  call dein#add('zxqfl/tabnine-vim')
   
   " Required:
   call dein#end()
