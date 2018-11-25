@@ -10,6 +10,9 @@ config:
   showdiff: false
   workdir: ~/.config/dotdrop
 dotfiles:
+  f_gitconfig:
+    dst: ~/.gitconfig
+    src: gitconfig
   f_gitignore_global:
     dst: ~/.gitignore_global
     src: gitignore_global
@@ -21,3 +24,4 @@ profiles:
     dotfiles:
     - f_zshrc
     - f_gitignore_global
+    - f_gitconfig
