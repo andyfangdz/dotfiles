@@ -12,6 +12,7 @@ fi
 
 script_dir=$(dirname $0)
 
+export DOTFILES_DIR="$HOME/dotfiles"
 export ROOT_DIR="$script_dir"
 
 fpath+=${script_dir}/completions

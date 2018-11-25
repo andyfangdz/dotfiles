@@ -1,11 +1,5 @@
 # dotfiles
 
-Dotfiles
-
-
-## `pygmentize`
-
 ```bash
-pip3 install pipsi
-pipsi install Pygments
+git clone --recurse-submodules git@github.com:andyfangdz/dotfiles.git
 ```

@@ -1,0 +1,23 @@
+config:
+  backup: true
+  banner: true
+  create: true
+  dotpath: src
+  ignoreempty: false
+  keepdot: false
+  link_by_default: false
+  longkey: false
+  showdiff: false
+  workdir: ~/.config/dotdrop
+dotfiles:
+  f_gitignore_global:
+    dst: ~/.gitignore_global
+    src: gitignore_global
+  f_zshrc:
+    dst: ~/.zshrc
+    src: zshrc
+profiles:
+  abnb.zt.andyfang.biz:
+    dotfiles:
+    - f_zshrc
+    - f_gitignore_global
