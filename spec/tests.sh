@@ -3,6 +3,10 @@ set -ex
 
 ln -s . ~/dotfiles
 cd ~/dotfiles
-dotdrop install
+
+nix-env -i python37
+
+virtualenv env
+source env/bin/activate
 
 zsh ~/dotfiles/index.zsh
