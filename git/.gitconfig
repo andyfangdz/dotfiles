@@ -12,7 +12,7 @@
 
   branch-name = "!git rev-parse --abbrev-ref HEAD"
   open-branch = "!hub browse -- tree/$(git branch-name)"
-  publish = "!git push --set-upstream origin origin $(git branch-name)"
+  publish = "!git push --set-upstream origin $(git branch-name)"
   unpublish = "!git push origin :$(git branch-name)"
   rebase-remote-master = "!git fetch origin master && git rebase origin/master"
 
