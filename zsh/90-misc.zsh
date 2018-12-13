@@ -44,3 +44,7 @@ op_get_pass() {
 gpath () {
   echo :${${1%/}:gs/\//:}:"$2"
 }
+
+if [ "$(umask)" = "000" ]; then
+   umask 022
+fi

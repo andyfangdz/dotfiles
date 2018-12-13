@@ -19,6 +19,9 @@ dotfiles:
   f_gitignore_global:
     dst: ~/.gitignore_global
     src: gitignore_global
+  f_zsh_history:
+    dst: ~/.zsh_history
+    src: zsh_history
   f_zshrc:
     dst: ~/.zshrc
     src: zshrc
@@ -29,3 +32,11 @@ profiles:
     - f_gitignore_global
     - f_gitconfig
     - d_um
+    - f_zsh_history
+  asus-pc:
+    dotfiles:
+    - f_zshrc
+    - f_gitignore_global
+    - f_gitconfig
+    - d_um
+    - f_zsh_history
