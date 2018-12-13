@@ -40,3 +40,7 @@ op_get_token() {
 op_get_pass() {
   op_get_item $1 password
 }
+
+gpath () {
+  echo :${${1%/}:gs/\//:}:"$2"
+}
