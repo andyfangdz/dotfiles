@@ -1,6 +1,7 @@
 local script_dir=$(dirname ${(%):-%x})
 
 local script_dir_end=$script_dir
+export DOTFILES_DIR=$script_dir
 export ROOT_DIR="$script_dir/zsh"
 export local_zsh_dir="$ROOT_DIR"
 

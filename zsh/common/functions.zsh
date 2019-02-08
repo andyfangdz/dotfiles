@@ -29,3 +29,14 @@ function gpb {
 function gpo {
   gpr -f %U | xargs open
 }
+
+export GNPR_TEMPLATE="$DOTFILES_DIR/PULL_REQUEST_TEMPLATE.md"
+
+# create a new PR
+function gnpr {
+  hub pull-request -F - --edit < $GNPR_TEMPLATE
+}
+
+function gnpro {
+  hub pull-request -F - -o --edit < $GNPR_TEMPLATE
+}
