@@ -52,12 +52,9 @@ if dein#load_state($HOME.'/.cache/dein')
   call dein#add('sheerun/vim-polyglot')
 
   " completions
-  call dein#add('roxma/nvim-completion-manager')
-
   " rust
   call dein#add('rust-lang/rust.vim')
   call dein#add('racer-rust/vim-racer')
-  call dein#add('roxma/nvim-cm-racer')
 
   call dein#add('scrooloose/nerdtree')
   call dein#add('vim-scripts/cream-showinvisibles')
