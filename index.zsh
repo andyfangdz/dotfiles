@@ -4,6 +4,7 @@ local script_dir_end=$script_dir
 export DOTFILES_DIR=$script_dir
 export ROOT_DIR="$script_dir/zsh"
 export local_zsh_dir="$ROOT_DIR"
+alias dotdrop="dotdrop --cfg=$script_dir/config.yaml"
 
 if [ -e ${script_dir}/local.config.zsh ]; then
   source ${script_dir}/local.config.zsh

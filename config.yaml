@@ -33,7 +33,7 @@ profiles:
     - f_gitconfig
     - d_um
     - f_zsh_history
-  asus-pc:
+  asus-linux:
     dotfiles:
     - f_zshrc
     - f_gitignore_global
