@@ -19,6 +19,9 @@ dotfiles:
   f_gitignore_global:
     dst: ~/.gitignore_global
     src: gitignore_global
+  f_tmux.conf:
+    dst: ~/.tmux.conf
+    src: tmux.conf
   f_zsh_history:
     dst: ~/.zsh_history
     src: zsh_history
@@ -33,6 +36,7 @@ profiles:
     - f_gitconfig
     - d_um
     - f_zsh_history
+    - f_tmux.conf
   asus-linux:
     dotfiles:
     - f_zshrc

@@ -1,2 +1,10 @@
 [include]
   path = ~/dotfiles/git/.gitconfig
+[push]
+	default = current
+[rerere]
+	enabled = true
+[core]
+	precomposeunicode = true
+	excludesfile = ~/.gitignore_global
+	sparseCheckout = true
