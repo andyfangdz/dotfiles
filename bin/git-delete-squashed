@@ -7,7 +7,7 @@
 # been applied to master.
 # If so, it deletes the branch.
 
-set -euo pipefail
+set -eo pipefail
 
 base_branch=${1:-master}
 
@@ -20,6 +20,10 @@ while read -r branch; do
   commit=$(git rev-parse $branch^{tree})
   tmp_tree=$(git commit-tree $commit -p $merge_base -m _)
   if [[ $(git cherry master $tmp_tree) == "-"* ]]; then
-    git branch -D $branch
+    if [ -n $DRY_RUN ]; then
+      echo "- delete branch \`$branch'"
+    else
+      git branch -D $branch
+    fi
   fi
 done <<< "$branches"

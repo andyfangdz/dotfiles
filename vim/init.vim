@@ -63,6 +63,18 @@ if dein#load_state($HOME.'/.cache/dein')
 
   call dein#add('zxqfl/tabnine-vim')
   
+  call dein#add('jceb/vim-orgmode')
+  call dein#add('tpope/vim-repeat')
+  call dein#add('vim-scripts/utl.vim')
+  call dein#add('vim-scripts/taglist.vim')
+  call dein#add('vim-scripts/utl.vim')
+  call dein#add('majutsushi/tagbar')
+  call dein#add('tpope/vim-speeddating')
+  call dein#add('chrisbra/NrrwRgn')
+  call dein#add('mattn/calendar-vim')
+  call dein#add('vim-scripts/SyntaxRange')
+
+  
   " Required:
   call dein#end()
   call dein#save_state()
@@ -105,9 +117,9 @@ vnoremap <silent> <leader> :<c-u>LeaderGuideVisual '<Space>'<CR>
 
 "Nerdtree stuff
 autocmd StdinReadPre * let s:std_in=1
-"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-"autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
-"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 nnoremap <leader>nt :NERDTreeToggle<CR>
 
 "Language specific formatting

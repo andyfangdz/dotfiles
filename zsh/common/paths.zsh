@@ -5,8 +5,8 @@ path+=$HOME/local/opt/bin
 path+=$HOME/bin
 path+=/usr/local/sbin
 
-if _is "$HOSTNAME_MAC"; then
-    path+="/Applications/VMware Fusion.app/Contents/Library"
+if _is "$HOSTTYPE_MAC"; then
+    path=($DOTFILES_DIR/mac/bin $path)
 fi
 
 function() {
