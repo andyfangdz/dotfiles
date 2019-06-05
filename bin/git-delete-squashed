@@ -20,9 +20,8 @@ while read -r branch; do
   commit=$(git rev-parse $branch^{tree})
   tmp_tree=$(git commit-tree $commit -p $merge_base -m _)
   if [[ $(git cherry master $tmp_tree) == "-"* ]]; then
+    echo "- delete branch \`$branch'"
     if [ -n $DRY_RUN ]; then
-      echo "- delete branch \`$branch'"
-    else
       git branch -D $branch
     fi
   fi
