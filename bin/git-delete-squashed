@@ -16,10 +16,10 @@ git checkout -q $base_branch
 branches=$(git for-each-ref refs/heads/ "--format=%(refname:short)")
 
 while read -r branch; do
-  merge_base=$(git merge-base master $branch)
+  merge_base=$(git merge-base $base_branch $branch)
   commit=$(git rev-parse $branch^{tree})
   tmp_tree=$(git commit-tree $commit -p $merge_base -m _)
-  if [[ $(git cherry master $tmp_tree) == "-"* ]]; then
+  if [[ $(git cherry $base_branch $tmp_tree) == "-"* ]]; then
     echo "- delete branch \`$branch'"
     if [ -n $DRY_RUN ]; then
       git branch -D $branch
