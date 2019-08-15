@@ -38,10 +38,10 @@ profiles:
     - d_um
     - f_zsh_history
     - f_tmux.conf
-  asus-linux:
+  andy-pc:
     dotfiles:
     - f_zshrc
     - f_gitignore_global
-    - f_gitconfig
+    # - f_gitconfig
     - d_um
     - f_zsh_history
