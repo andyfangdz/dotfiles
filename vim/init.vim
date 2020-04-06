@@ -61,7 +61,7 @@ if dein#load_state($HOME.'/.cache/dein')
 
   call dein#add('hecal3/vim-leader-guide')
 
-  call dein#add('zxqfl/tabnine-vim')
+  " call dein#add('zxqfl/tabnine-vim')
   
   call dein#add('jceb/vim-orgmode')
   call dein#add('tpope/vim-repeat')

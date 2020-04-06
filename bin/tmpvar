@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+
+set -eo pipefail
+
+: "${DICT_PATH:="/tmp/tmpvars--$(hostname)--$(bootepoch)/dict.txt"}"
+
+mkdir -p $(dirname $DICT_PATH)
+
+original_cmds="$@"
+
+declare -A DICT
+
+for line in $(cat $DICT_PATH); do
+  set -- $(echo $line | tr '=' ' ' ) "$@"
+  key=$1
+  value=$2
+  DICT[$key]="$value"
+  shift 2
+done
+
+# echo $DICT
+
+sub_list() {
+  for key in "${!DICT[@]}"; do
+    echo "$key=${DICT[$key]}"
+  done
+}
+
+sub_set() {
+  DICT[$1]="$2"
+  TMP_DICT="$(dirname $DICT_PATH)/dict.txt.$(gnu-date +%s)"
+  for key in "${!DICT[@]}"; do
+    echo "$key=${DICT[$key]}" >> $TMP_DICT
+  done
+  mv $TMP_DICT $DICT_PATH
+}
+
+sub_get() {
+  echo "${DICT[$1]}"
+}
+
+CMD=$1
+case $CMD in
+    "" | "-l" | "--list")
+        sub_list
+        ;;
+    "-p" | "--print-path")
+        echo $DICT_PATH
+        ;;
+    *)
+        shift
+        sub_${CMD} $@
+        if [ $? = 127 ]; then
+            echo "Error: '$CMD' is not a known command." >&2
+            echo "       Run '$ProgName --help' for a list of known CMDs." >&2
+            exit 1
+        fi
+        ;;
+esac

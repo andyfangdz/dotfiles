@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+CMD=$(basename $0)
+CMD=${CMD#"gnu-"}
+
+if [ "$HOSTTYPE" == "Darwin" ]; then
+  exec g${CMD} "$@"
+else
+  exec ${CMD} "$@"
+fi
