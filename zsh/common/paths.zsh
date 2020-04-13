@@ -5,8 +5,10 @@ path=("$HOME/local/opt/bin" $path)
 path=("$HOME/bin" $path)
 path=("$HOME/go/bin" $path)
 path=("/usr/local/sbin" $path)
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-path=("$JAVA_HOME/bin:$PATH" $path)
+if [ -f "/usr/libexec/java_home" ]; then
+    export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+    path=("$JAVA_HOME/bin:$PATH" $path)
+fi
 if _is "$HOSTTYPE_MAC"; then
     path=($DOTFILES_DIR/mac/bin $path)
 fi

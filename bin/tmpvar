@@ -2,11 +2,11 @@
 
 set -eo pipefail
 
-: "${DICT_PATH:="/tmp/tmpvars--$(hostname)--$(bootepoch)/dict.txt"}"
+# : "${DICT_PATH:="/tmp/tmpvars--$(hostname)--$(bootepoch)/dict.txt"}"
+
+: "${DICT_PATH:="$HOME/Dropbox/shell/tmpvar"}"
 
 mkdir -p $(dirname $DICT_PATH)
-
-original_cmds="$@"
 
 declare -A DICT
 

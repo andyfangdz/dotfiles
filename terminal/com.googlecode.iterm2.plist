@@ -853,7 +853,7 @@
 	<key>LeftOption</key>
 	<integer>2</integer>
 	<key>LeftTabBarWidth</key>
-	<real>203</real>
+	<real>251</real>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>MaxVertically</key>
@@ -908,7 +908,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>1410 768 620 392 0 0 3440 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 1089 3440 329 0 0 3440 1417 </string>
+	<string>0 699 1680 329 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_8D1FDF88-DA27-4EC1-80AE-6B31C5D67C6D</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_8D1FDF88-DA27-4EC1-80AE-6B31C5D67C6D_selection</key>
@@ -3747,16 +3747,18 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.7beta4</string>
-		<string>3.3.0beta16</string>
-		<string>3.3.7beta2</string>
-		<string>3.3.8beta4</string>
+		<string>3.3.0beta7</string>
 		<string>3.3.7beta1</string>
 		<string>3.3.2beta1</string>
 		<string>3.3.0beta15</string>
-		<string>3.3.9</string>
+		<string>3.3.0beta16</string>
+		<string>3.3.8beta4</string>
+		<string>3.3.7beta2</string>
 		<string>3.3.10beta1</string>
-		<string>3.3.0beta7</string>
+		<string>3.3.7beta4</string>
+		<string>3.3.10beta2</string>
+		<string>3.3.9</string>
+		<string>3.3.10beta3</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
@@ -3769,14 +3771,14 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {3440, 1440}}</string>
 		<key>topLeft</key>
-		<string>{1565, 793}</string>
+		<string>{269, 595}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>110C6A09-915D-4E85-8F87-D676DDB9BA00</string>
 	<key>NoSyncLastTipTime</key>
 	<real>592363889.16141701</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>70</integer>
+	<integer>85</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -4130,6 +4132,14 @@
 				<true/>
 				<key>name</key>
 				<string>style</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentTab.currentSession.jobPid</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -4742,13 +4752,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-03-08T18:57:53Z</date>
+	<date>2020-04-10T18:19:35Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
-	<integer>69375758</integer>
+	<integer>2389280971</integer>
 	<key>SUUpdateRelaunchingMarker</key>
-	<true/>
+	<false/>
 	<key>SavePasteHistory</key>
 	<true/>
 	<key>ShowBookmarkName</key>
@@ -4829,7 +4839,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.10beta1</string>
+	<string>3.3.10beta3</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
