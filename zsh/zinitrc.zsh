@@ -71,13 +71,14 @@ zinit ice if"[[ $OSTYPE == *darwin* ]]"
 zinit load "zsh-users/zsh-apple-touchbar"
 zinit ice if"[[ $OSTYPE == *darwin* ]]"
 zinit load "unixorn/tumult.plugin.zsh"
+zinit ice if"[[ $OSTYPE == *darwin* ]]"
+zinit load 'marzocchi/zsh-notify'
 
 zinit load "unixorn/warhol.plugin.zsh"
 
 zinit load 'bric3/nice-exit-code'
 zinit load 'djui/alias-tips'
 # zinit load 'hchbaw/auto-fu.zsh', defer:2
-zinit load 'marzocchi/zsh-notify'
 
 zinit ice pick"async.zsh" src"pure.zsh"
 zinit light sindresorhus/pure
