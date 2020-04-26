@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+set -eo pipefail
+
+PIPX_BIN="$HOME/.config/pipx/bin"
+PIPX_VENVS="$HOME/.config/pipx/venvs"
+PIPX_PYTHON="python3"
+
+mkdir -p $PIPX_VENVS
+
+VENV_PATH="$PIPX_VENVS/$1"
+
+create_venv() {
+  echo "creating new virtualenv in $VENV_PATH..."
+  virtualenv "$VENV_PATH" -p "$PIPX_PYTHON"
+  "$VENV_PATH/bin/pip" install $1
+}
+
+[ ! -d "$VENV_PATH" ] && create_venv $1
+
+CMD=$1
+shift 1
+
+"$VENV_PATH/bin/$CMD" "$@"
