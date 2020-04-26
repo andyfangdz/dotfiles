@@ -84,12 +84,12 @@ elif _has emacs; then
 fi
 
 # Overridable locale support.
-if [ -z $$LC_ALL ]; then
-  export LC_ALL=C
-fi
-if [ -z $LANG ]; then
-  export LANG=en_US
-fi
+# if [ -z $$LC_ALL ]; then
+#   export LC_ALL=C
+# fi
+# if [ -z $LANG ]; then
+#   export LANG=en_US
+# fi
 
 # History control.
 SAVEHIST=100000
