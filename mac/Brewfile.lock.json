@@ -1642,7 +1642,70 @@
           }
         }
       },
-      "svn": null
+      "svn": null,
+      "bazel": {
+        "version": "3.2.0",
+        "bottle": {
+          "cellar": ":any_skip_relocation",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/bazel-3.2.0.catalina.bottle.tar.gz",
+              "sha256": "346f562fc942c6de2f83490fce72d260228f0f70444a181931b708138d83cad0"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/bazel-3.2.0.mojave.bottle.tar.gz",
+              "sha256": "85097c66f207d8e43021d6932c2bd5c5014dd111ecde4eb6ed26a672a11c23be"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/bazel-3.2.0.high_sierra.bottle.tar.gz",
+              "sha256": "282ebf2132daa3796f0a774b79977963a124a4d24aae99258676e4f02a175103"
+            }
+          }
+        }
+      },
+      "grpc": {
+        "version": "1.29.1",
+        "bottle": {
+          "cellar": "/usr/local/Cellar",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/grpc-1.29.1.catalina.bottle.tar.gz",
+              "sha256": "c96ba02fd205cb9dfa8dfc90d2b76c7e78fd361b6c0cc627d824926c62d4f7e5"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/grpc-1.29.1.mojave.bottle.tar.gz",
+              "sha256": "38b16768396deae0813d4eb3d903cf227023776583b5cc95fe46e0150eb59707"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/grpc-1.29.1.high_sierra.bottle.tar.gz",
+              "sha256": "3b27b761aa04fa300d42b223a32fbd53b72466a2c1f27d87650c2c3780725d58"
+            }
+          }
+        }
+      },
+      "protobuf": {
+        "version": "3.12.1",
+        "bottle": {
+          "cellar": ":any",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/protobuf-3.12.1.catalina.bottle.tar.gz",
+              "sha256": "6b13b089c2754bb9df99f2621ea0fd0fd5feccca601aaca10dc6982927c6fc3a"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/protobuf-3.12.1.mojave.bottle.tar.gz",
+              "sha256": "b09bdcad4bde73a6d9f5675979da6f10b16b9620a26b5bc6a7639d03e3b7fccb"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/protobuf-3.12.1.high_sierra.bottle.tar.gz",
+              "sha256": "af2d9b9bc381ef83a030cef3960a5e72bd1007e5ae34d5b8a9f3b7901cdfdd19"
+            }
+          }
+        }
+      }
     },
     "cask": {
       "1password-cli": {
