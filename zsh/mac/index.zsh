@@ -5,7 +5,6 @@ bootcamp() {
 
 export BYOBU_PREFIX=/usr/local
 
-path=($path ~/Library/Python/*/bin)
 
 function anybar { echo -n $1 | nc -4u -w0 localhost ${2:-1738}; }
 

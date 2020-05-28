@@ -30,7 +30,7 @@ dotfiles:
     dst: ~/.zshrc
     src: zshrc
 profiles:
-  mbp16.zt.andyfang.biz:
+  mbp16:
     dotfiles:
     - f_zshrc
     - f_gitignore_global

@@ -31,6 +31,7 @@ zinit load junegunn/fzf-bin
 zinit light zsh-users/zsh-autosuggestions
 zinit light zdharma/fast-syntax-highlighting
 
+zinit snippet OMZL::functions.zsh
 zinit snippet OMZL::git.zsh
 zinit snippet OMZL::clipboard.zsh
 zinit snippet OMZL::compfix.zsh
