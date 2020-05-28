@@ -8,7 +8,7 @@
         "revision": "60e0d6bb785d62d9091a55fb5431ef681b8d59ed"
       },
       "homebrew/cask": {
-        "revision": "55b2d7fd0cafdf08eebdc6300ab516d62e798b48"
+        "revision": "cef42390ade1629a9124a71c33eca0b8e2532e75"
       },
       "homebrew/cask-fonts": {
         "revision": "1837305bf78ba5e542595db9c31a382bb44fa394"
@@ -20,7 +20,7 @@
         "revision": "a093da4b2cfe6a4dfcf1f35dc47ec5722b806bbe"
       },
       "homebrew/core": {
-        "revision": "3884f14082a41bb5f4677f4ffade9d8b425bcab2"
+        "revision": "fba9f21b74e856bd552eff5c090987174694bf72"
       },
       "mistertea/et": {
         "revision": "ae17f3a9140e4108dedd7184e2e28bb0782ab2e9"
@@ -1641,7 +1641,8 @@
             }
           }
         }
-      }
+      },
+      "svn": null
     },
     "cask": {
       "1password-cli": {
@@ -1829,6 +1830,18 @@
         "options": {
           "full_name": "macs-fan-control"
         }
+      },
+      "smoothscroll": {
+        "version": "1.4.11",
+        "options": {
+          "full_name": "smoothscroll"
+        }
+      },
+      "slack-beta": {
+        "version": "4.6.0",
+        "options": {
+          "full_name": "slack-beta"
+        }
       }
     },
     "mas": {
@@ -1863,7 +1876,7 @@
       "catalina": {
         "HOMEBREW_VERSION": "2.2.17",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "3884f14082a41bb5f4677f4ffade9d8b425bcab2",
+        "Homebrew/homebrew-core": "fba9f21b74e856bd552eff5c090987174694bf72",
         "CLT": "1103.0.32.62",
         "Xcode": "11.5",
         "macOS": "10.15.5"

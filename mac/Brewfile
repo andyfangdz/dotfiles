@@ -89,6 +89,7 @@ brew "yarn"
 brew "zsh"
 brew "mistertea/et/et"
 brew "pyenv"
+brew "svn"
 
 cask "1password-beta"
 cask "1password-cli"
@@ -121,6 +122,8 @@ cask "emacs"
 cask "corretto8"
 cask "corretto"
 cask "macs-fan-control"
+cask "smoothscroll"
+cask "slack-beta"
 
 mas "1Blocker", id: 1107421413
 mas "Discovery", id: 1381004916

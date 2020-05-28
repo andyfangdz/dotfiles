@@ -47,7 +47,8 @@ zinit snippet OMZP::git-extras
 zinit snippet OMZP::colorize
 zinit snippet OMZP::node
 
-zinit ice svn if"[[ $OSTYPE == *darwin* ]]"
+zinit ice if"[[ $OSTYPE == *darwin* ]]" svn wait"0" lucid atinit"local ZSH=\$PWD" \
+    atclone"mkdir -p plugins; cd plugins; ln -sfn ../. osx"
 zinit snippet OMZ::plugins/osx
 
 zinit load "liangguohuan/fzf-marker"
