@@ -1,0 +1,13 @@
+Host github.com
+  IdentityFile ~/.ssh/id_ed25519
+
+Host *.andyfang.me
+  User andy
+
+Host *.andyfang.biz
+  User andy
+  ForwardAgent yes
+
+Host *.local
+  User andy
+  ForwardAgent yes

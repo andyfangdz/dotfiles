@@ -33,6 +33,15 @@ dotfiles:
   f_zshrc:
     dst: ~/.zshrc
     src: zshrc
+  d_ssh_config.d:
+    src: ssh/config.d
+    dst: ~/.ssh/config.d
+  f_ssh_config:
+    src: ssh/config
+    dst: ~/.ssh/config
+  f_ssh_platform.d_macos:
+    src: ssh/platform.d/macos
+    dst: ~/.ssh/platform.d/macos
 profiles:
   mbp16.zt.andyfang.biz:
     dotfiles:
@@ -43,6 +52,9 @@ profiles:
     - d_um
     - f_zsh_history
     - f_tmux.conf
+    - d_ssh_config.d
+    - f_ssh_config
+    - f_macos
   andy-pc:
     dotfiles:
     - f_zshrc
