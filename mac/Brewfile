@@ -99,6 +99,7 @@ cask "docker"
 cask "dropbox"
 cask "font-fira-code"
 cask "font-jetbrains-mono"
+cask "font-source-code-pro"
 cask "gfxcardstatus"
 cask "jetbrains-toolbox"
 cask "keybase"
@@ -117,6 +118,9 @@ cask "iterm2-beta"
 cask "google-chrome"
 cask "google-drive-file-stream"
 cask "emacs"
+cask "corretto8"
+cask "corretto"
+cask "macs-fan-control"
 
 mas "1Blocker", id: 1107421413
 mas "Discovery", id: 1381004916

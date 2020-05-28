@@ -1805,6 +1805,30 @@
         "options": {
           "full_name": "emacs"
         }
+      },
+      "corretto8": {
+        "version": "8.252.09.1",
+        "options": {
+          "full_name": "corretto8"
+        }
+      },
+      "corretto": {
+        "version": "11.0.7.10.1",
+        "options": {
+          "full_name": "corretto"
+        }
+      },
+      "font-source-code-pro": {
+        "version": "2.030R-ro-1.050R-it",
+        "options": {
+          "full_name": "font-source-code-pro"
+        }
+      },
+      "macs-fan-control": {
+        "version": "1.5.6",
+        "options": {
+          "full_name": "macs-fan-control"
+        }
       }
     },
     "mas": {
