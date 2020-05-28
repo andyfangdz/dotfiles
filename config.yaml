@@ -5,12 +5,15 @@ config:
   dotpath: src
   ignoreempty: false
   keepdot: false
-  link_dotfile_default: nolink
-  link_on_import: nolink
+  link_dotfile_default: link
+  link_on_import: link
   longkey: false
   showdiff: true
   workdir: ~/.config/dotdrop
 dotfiles:
+  f_nvim:
+    dst: ~/.config/nvim/init.vim
+    src: nvim/init.vim
   d_um:
     dst: ~/.um
     src: um
@@ -26,12 +29,14 @@ dotfiles:
   f_zsh_history:
     dst: ~/.zsh_history
     src: zsh_history
+    link: nolink
   f_zshrc:
     dst: ~/.zshrc
     src: zshrc
 profiles:
-  mbp16:
+  mbp16.zt.andyfang.biz:
     dotfiles:
+    - f_nvim
     - f_zshrc
     - f_gitignore_global
     - f_gitconfig

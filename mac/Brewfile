@@ -8,6 +8,9 @@ tap "homebrew/core"
 tap "mistertea/et"
 tap "rbenv/tap"
 tap "thoughtbot/formulae"
+
+brew "mas"
+
 brew "asciinema"
 brew "aspell"
 brew "awk"
@@ -85,6 +88,9 @@ brew "yamllint"
 brew "yarn"
 brew "zsh"
 brew "mistertea/et/et"
+brew "pyenv"
+
+cask "1password-beta"
 cask "1password-cli"
 cask "alacritty"
 cask "alfred"
@@ -106,3 +112,15 @@ cask "visual-studio-code"
 cask "wechat"
 cask "wireshark"
 cask "zerotier-one"
+cask "setapp"
+cask "iterm2-beta"
+cask "google-chrome"
+cask "google-drive-file-stream"
+cask "emacs"
+
+mas "1Blocker", id: 1107421413
+mas "Discovery", id: 1381004916
+mas "Disk Speed Test", id: 425264550
+mas "Microsoft Remote Desktop", id: 1295203466
+mas "OverPicture", id: 1188020834
+mas "Xcode", id: 497799835

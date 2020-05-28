@@ -1,9 +1,11 @@
+#/usr/bin/env bash
+
 export PATH="~/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-py2_version=2.7.15
-py3_version=3.7.2
+PYTHON2=python2
+PYTHON3=python3
 
 pyenv install $py2_version
 pyenv install $py3_version
