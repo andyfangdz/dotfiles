@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+exec rsync \
+  --remove-source-files \
+  --recursive \
+  --verbose \
+  --human-readable \
+  --progress \
+  --links \
+  --copy-unsafe-links \
+  --owner \
+  --group \
+  --perms \
+  --times \
+  --force \
+  --ignore-errors \
+  --sparse \
+  --info=progress2 \
+  "$@"
