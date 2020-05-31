@@ -1905,6 +1905,24 @@
         "options": {
           "full_name": "slack-beta"
         }
+      },
+      "telegram": {
+        "version": "6.1.4.200256",
+        "options": {
+          "full_name": "telegram"
+        }
+      },
+      "steam": {
+        "version": "latest",
+        "options": {
+          "full_name": "steam"
+        }
+      },
+      "intel-power-gadget": {
+        "version": "3.6.0",
+        "options": {
+          "full_name": "intel-power-gadget"
+        }
       }
     },
     "mas": {
@@ -1931,6 +1949,11 @@
       "Xcode": {
         "id": "497799835",
         "version": "11.5"
+      },
+      "WeChat": null,
+      "NextDNS": {
+        "id": "1464122853",
+        "version": "1.4.1"
       }
     }
   },
