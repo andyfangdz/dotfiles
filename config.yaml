@@ -46,7 +46,7 @@ dotfiles:
     src: dotfiles/local.config.zsh
     dst: ~/dotfiles/local.config.zsh
 profiles:
-  mbp16.zt.andyfang.biz:
+  baseline:
     dotfiles:
     - f_nvim
     - f_zshrc
@@ -57,12 +57,13 @@ profiles:
     - f_tmux.conf
     - d_ssh_config.d
     - f_ssh_config
-    - f_ssh_platform.d_macos
     - f_local.config.zsh
-  andy-pc:
+
+  mbp16.zt.andyfang.biz:
     dotfiles:
-    - f_zshrc
-    - f_gitignore_global
-    # - f_gitconfig
-    - d_um
-    - f_zsh_history
+      - f_ssh_platform.d_macos
+    include:
+      - baseline
+  dell-server:
+    include:
+      - baseline

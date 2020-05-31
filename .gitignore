@@ -1,6 +1,6 @@
 .history
-local.config.zsh
-local-end.config.zsh
+/local.config.zsh
+/local-end.config.zsh
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
