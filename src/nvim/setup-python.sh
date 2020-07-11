@@ -1,4 +1,5 @@
 #/usr/bin/env bash
+set -exo pipefail
 
 export PATH="~/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
@@ -6,6 +7,9 @@ eval "$(pyenv virtualenv-init -)"
 
 PYTHON2=python2
 PYTHON3=python3
+
+py2_version=$(pyenv install -l | awk '{$1=$1};1' | grep -E '^2\.\d+\.\d+$' | tail -n 1)
+py3_version=$(pyenv install -l | awk '{$1=$1};1' | grep -E '^3\.\d+\.\d+$' | tail -n 1)
 
 pyenv install $py2_version
 pyenv install $py3_version
