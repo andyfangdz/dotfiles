@@ -2,25 +2,25 @@
   "entries": {
     "tap": {
       "hhvm/hhvm": {
-        "revision": "18a26f3166c85559fdcf8b9e9b1d2a9f4207a306"
+        "revision": "29e936d47a58d74acc68053f378d52f831063b12"
       },
       "homebrew/bundle": {
-        "revision": "f56efde2425c278b127cb10be2844a9e00237139"
+        "revision": "d0b6e3d53d42b266e34ee09a8522b55640032dfc"
       },
       "homebrew/cask": {
-        "revision": "dadeef6ab556970cd8e64c598320975cf12cedaa"
+        "revision": "75b2ce8c77e46f6856a2a463e078a6d67f68fce1"
       },
       "homebrew/cask-fonts": {
-        "revision": "f0177f59ec25a75a9e0acba1c44d12b752a53ebf"
+        "revision": "304aa3d2b602c9eb1abf13c34c1cb18b329977bc"
       },
       "homebrew/cask-versions": {
-        "revision": "adc8bf18ce61941b4f429aaa9e1e8c2d5614a9c2"
+        "revision": "1f2876b366bdf3141606989acce7f1e404968a82"
       },
       "homebrew/services": {
         "revision": "a379971f8cbca1875f625a47a93efeafc6512091"
       },
       "homebrew/core": {
-        "revision": "cd11327ed56f23e5f6c571f91522f82b56958805"
+        "revision": "a30675c381baba1de959785a71f2f071214c57ff"
       },
       "mistertea/et": {
         "revision": "ae17f3a9140e4108dedd7184e2e28bb0782ab2e9"
@@ -126,22 +126,22 @@
         }
       },
       "awscli": {
-        "version": "2.0.29",
+        "version": "2.0.30",
         "bottle": {
           "cellar": "/usr/local/Cellar",
           "prefix": "/usr/local",
           "files": {
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/awscli-2.0.29.catalina.bottle.tar.gz",
-              "sha256": "b38dab3562270529c5e57d34b151ac0b31da89aa1ca8316682da6e34ff243fc5"
+              "url": "https://homebrew.bintray.com/bottles/awscli-2.0.30.catalina.bottle.tar.gz",
+              "sha256": "51f06bcb5af7ae8d38e74d7f74ec363cb2341960636dd36ac8ac011a76664cfe"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/awscli-2.0.29.mojave.bottle.tar.gz",
-              "sha256": "50bfad8bd4a17d193a7c9e3de5143900842ce0193ff3e842f2d2f7a2a311ec29"
+              "url": "https://homebrew.bintray.com/bottles/awscli-2.0.30.mojave.bottle.tar.gz",
+              "sha256": "7ac7d2fb50136f41251eebdccfec209cd0004fb6952b949bb0ab9566cae2ec4a"
             },
             "high_sierra": {
-              "url": "https://homebrew.bintray.com/bottles/awscli-2.0.29.high_sierra.bottle.tar.gz",
-              "sha256": "c11341c9f3500080869c4c5f4a31163d527da5bb90f8068a92403c1c543c7643"
+              "url": "https://homebrew.bintray.com/bottles/awscli-2.0.30.high_sierra.bottle.tar.gz",
+              "sha256": "aea7d8638b34d184c2c2f082f957f398eaa69e723360685e08326f3c2f0c5392"
             }
           }
         }
@@ -1922,6 +1922,12 @@
         "options": {
           "full_name": "coconutbattery"
         }
+      },
+      "krisp": {
+        "version": "1.14.4",
+        "options": {
+          "full_name": "krisp"
+        }
       }
     },
     "mas": {
@@ -1961,7 +1967,7 @@
       "catalina": {
         "HOMEBREW_VERSION": "2.4.5",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "cd11327ed56f23e5f6c571f91522f82b56958805",
+        "Homebrew/homebrew-core": "a30675c381baba1de959785a71f2f071214c57ff",
         "CLT": "11.5.0.0.1.1588476445",
         "Xcode": "11.5",
         "macOS": "10.15.5"
