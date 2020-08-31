@@ -133,6 +133,9 @@ cask "telegram"
 cask "steam"
 cask "intel-power-gadget"
 cask "krisp"
+cask "adobe-acrobat-reader"
+cask "parallels-client"
+cask "cheatsheet"
 
 mas "1Blocker", id: 1107421413
 mas "Discovery", id: 1381004916
