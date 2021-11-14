@@ -1,8 +1,8 @@
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
-    print -P "%F{33}▓▒░ %F{11220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
+    print -P "%F{33}▓▒░ %F{11220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
     command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
-    command git clone https://github.com/zdharma/zinit "$HOME/.zinit/bin" && \
+    command git clone https://github.com/zdharma-continuum/zinit "$HOME/.zinit/bin" && \
         print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
         print -P "%F{160}▓▒░ The clone has failed.%f%b"
 fi
@@ -13,23 +13,26 @@ source "$HOME/.zinit/bin/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
+zinit light Aloxaf/fzf-tab
+zicompinit; zicdreplay
+
 zinit light-mode for \
-    zinit-zsh/z-a-patch-dl \
-    zinit-zsh/z-a-as-monitor \
-    zinit-zsh/z-a-bin-gem-node
+    zdharma-continuum/z-a-patch-dl \
+    zdharma-continuum/z-a-as-monitor \
+    zdharma-continuum/z-a-bin-gem-node
 
 ### End of Zinit's installer chunk
 
 zinit ice wait lucid atload'_zsh_autosuggest_start'
 zinit load zsh-users/zsh-autosuggestions
 
-zinit light zdharma/fast-syntax-highlighting
+zinit light zdharma-continuum/fast-syntax-highlighting
 
 zinit ice from"gh-r" as"program"
 zinit load junegunn/fzf-bin
 
 zinit light zsh-users/zsh-autosuggestions
-zinit light zdharma/fast-syntax-highlighting
+zinit light zdharma-continuum/fast-syntax-highlighting
 
 zinit snippet OMZL::functions.zsh
 zinit snippet OMZL::git.zsh
@@ -48,8 +51,8 @@ zinit snippet OMZP::colorize
 zinit snippet OMZP::node
 
 zinit ice if"[[ $OSTYPE == *darwin* ]]" svn wait"0" lucid atinit"local ZSH=\$PWD" \
-    atclone"mkdir -p plugins; cd plugins; ln -sfn ../. osx"
-zinit snippet OMZ::plugins/osx
+    atclone"mkdir -p plugins; cd plugins; ln -sfn ../. macos"
+zinit snippet OMZ::plugins/macos
 
 zinit load "liangguohuan/fzf-marker"
 zinit load "zsh-users/zsh-completions"

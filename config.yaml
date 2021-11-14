@@ -59,7 +59,7 @@ profiles:
     - f_ssh_config
     - f_local.config.zsh
 
-  andys-mbp13.zt.andyfang.biz:
+  andys-mbp14:
     dotfiles:
       - f_ssh_platform.d_macos
     include:

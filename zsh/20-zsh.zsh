@@ -1,4 +1,4 @@
-HISTFILE=$HOME/Dropbox/shell/zsh_history
+# HISTFILE=$HOME/Dropbox/shell/zsh_history
 HISTSIZE=2147483647
 SAVEHIST=$HISTSIZE
 

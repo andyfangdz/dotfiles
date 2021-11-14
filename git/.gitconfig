@@ -1,7 +1,6 @@
 [user]
   email = "andyfang.dz@gmail.com"
   name = "Andy Fang"
-  signingkey = B951D647252A92D0
 [pretty]
   lg = %C(red)%h%C(reset) %C(green)%ci%C(reset) %s %C(bold blue)-- %an%C(reset)%C(yellow)%d%C(reset)
   lge = %C(red)%h%C(reset) %C(green)%ci%C(reset) %s %C(bold blue)-- %an <%ae>%C(reset)%C(yellow)%d%C(reset)
@@ -75,7 +74,6 @@
   process = git-lfs filter-process
   required = true
 [commit]
-  gpgsign = true
   template = ~/.stCommitMsg
 [include]
   path = ~/.gitconfig.local
