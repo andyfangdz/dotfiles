@@ -2,9 +2,15 @@
   path = ~/dotfiles/git/.gitconfig
 [push]
 	default = current
+	autoSetupRemote = true
 [rerere]
 	enabled = true
 [core]
 	precomposeunicode = true
 	excludesfile = ~/.gitignore_global
 	sparseCheckout = true
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
